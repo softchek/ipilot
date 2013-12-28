@@ -9,4 +9,9 @@ class ApplicationController < ActionController::Base
   	end
   end
 
+  def goodbye
+	respond_to do |format|
+		format.html {render :text => "googdbye"}
+  	end
+  end
 end
